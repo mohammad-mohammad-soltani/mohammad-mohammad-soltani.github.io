@@ -1,3 +1,6 @@
 [submodule "simple-loading-page"]
 	path = simple-loading-page
 	url = https://github.com/mohammad-mohammad-soltani/simple-loading-page.git
+[submodule "SingJS"]
+	path = SingJS
+	url = https://github.com/mohammad-mohammad-soltani/SingJS.git
