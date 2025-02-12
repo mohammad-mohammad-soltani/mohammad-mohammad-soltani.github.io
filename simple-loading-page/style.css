@@ -1,0 +1,64 @@
+:root{
+    --backgroung : rgb(29, 29, 29);
+    --squar : white;
+    --squar_shadow : black;
+}
+body{
+    background-color: var(--backgroung);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes loading {
+    0%{
+        rotate: 45deg;
+        border-radius:  0 0 30px 0;
+    }
+    25%{
+        rotate: 135deg;
+        border-radius:  0 30px 0 0;
+    }
+    50%{
+        rotate: 215deg;
+        border-radius:  30px 0 0 0;
+    }
+    75%{
+        rotate: 305deg;
+        border-radius:  0 0 0 30px;
+    }
+    100%{
+        rotate: 395deg;
+        border-radius:  0 0 30px 0;
+    }
+}
+.loading_box{
+    position: relative;
+    background-color: white;
+}
+.squar{
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--squar);
+    animation: loading 3s infinite  ;
+    position: absolute;
+    z-index: 999;
+}
+.squar_2{
+    right: -50px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--squar);
+    position: absolute;
+    z-index: 1;
+    filter: blur(100px);
+    
+}
+h1{
+    color: white;
+    position: absolute;
+    top: 30%;
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="assets/fonts/yekan/yekan.css">
+</head>
+<body>
+    <section class="content">
+        <div class="image"></div>
+        <div class="form">
+        <div class="progress"></div>
+        <div class="progress_bg"></div>
+          <div id="level_1" level="1" class="hide level">
+            <div class="center">
+                <span>جهت شروع ثبت نام شماره همراه خود را وارد کنید</span>
+                <div class="spacer"></div>
+                <span class="input_error" id="phone_error" ></span>
+                <input class="form-input " placeholder="محل وارد کردن شماره تلفن"  type="tel" name="" id="phone">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <button class="confrim_phone next_level button " level="1" >موافقم ، ادامه ثبت نام</button>
+            </div>
+          </div>
+          <div id="level_2" class="hide level" >
+            <div class="center">
+                <span>کد تایید ارسال شده را وارد نمایید </span>
+                <div class="spacer"></div>
+                <span class="input_error" id="verfication_error" ></span>
+                <input class="form-input" placeholder="محل وارد کردن کد تایید"  type="tel" name="" id="verfication">
+                <div class="spacer"></div>
+                <div class="spacer"></div>
+                <button class="next_level button" level="2" >موافقم ، ادامه ثبت نام</button>
+            </div>
+          </div>
+          <div id="level_3" class="hide level" >
+            <div class="center">
+               <div class="top"> 
+                    <p class="bold" >به ثبت نام هیئت ابنا الامام خوش آمدید</p>
+                    <p>پیش از ثبت نام موارد زیر را مطالعه کنید</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit provident, nihil voluptates numquam aperiam corporis ipsam accusamus sit expedita possimus quam error, exercitationem odit dolor eaque quos, dolorum officia impedit?</p>
+                </div>
+                <button class="next_level button" level="3" >موافقم ، ادامه ثبت نام</button>
+            </div>
+          </div>
+          <div id="level_4" class="hide level" >
+            <div class="center">
+                    <span class="input_error" id="user_data_error" ></span>
+                <div class="flex gap-2">
+                   <div class="part_2"> 
+                        <label  for="">نام </label>
+                        <input minimum="3" type="text" placeholder="نام شما" class="form-input2" >
+                    </div>
+                    <div class="part_2">
+                        <label  for="">نام خانوادگی</label>
+                        <input minimum="5" type="text" placeholder="نام خانوادگی" class="form-input2" >
+                    </div>
+                </div>
+               <div class="spacer"></div>
+                <button class="next_level button" level="4" >اطلاعات مورد نیاز را وارد کرده ام</button>
+            </div>
+          </div>
+          <div id="level_5" class="hide level" >
+            <div class="center">
+                <h2>نام صاحب کارت</h2>
+                <h3 class="card_data">سید ناصر رضوی</h3>
+                <div class="spacer"></div>
+                <h2>شماره کارت</h2>
+                <h3 class="card_data card_number">6219861912345678</h3>
+                <div class="spacer"></div>
+               <div class="box">
+                    <label class="label">
+                            <div class="zone">
+                                <img src="upload-vector.svg" alt="">
+                                <h3 id="upload-state" >فایل تصویر خود را بارگزاری کنید </h3>
+                                <span>حد اکثر حجم فایل 8 مگابایت میباشد</span>
+                                <div style="text-align: center;" class="input_error" id="resid_error" ></div>
+                            </div>
+                            <input type="file" name="" id="resid">
+                        
+                    </label>
+
+               </div>
+               <div class="spacer"></div>
+               <div class="spacer"></div>
+                <button class="next_level button" level="5" ><strong>رسید معتبر</strong> را به درستی آپلود کرده ام</button>
+            </div>
+          </div>
+          <div id="level_6" class="hide level" >
+            <div class="center">
+                <div class="map">
+                    <div class="row">
+                        <div  class="place">
+                            ضلع شمالی مسجد
+                        </div>
+                        <div  class="place">
+                            ضلع جنوبی مسجد
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="place">
+                            ضلع شرقی مسجد
+                        </div>
+                        <div class="place">
+                            ضلع فربی مسجد
+                        </div>
+                    </div>
+                </div>
+                <label for="">مکان خود را با توجه به نقشه وارد نمایید</label>
+                <div id="south" class="radio">ضلع جنوبی مسجد</div>
+                <div class="spacer"></div>
+                <div id="north" class="radio">ضلع شمالی مسجد</div>
+                <div class="spacer"></div>
+                <div id="east" class="radio">ضلع غربی مسجد</div>
+                <div class="spacer"></div>
+                <div id="west" class="radio">ضلع شرقی مسجد</div>
+
+               <div class="spacer"></div>
+                <button class="next_level button" level="6" >اطلاعات مورد نیاز را وارد کرده ام</button>
+            </div>
+          </div>
+          <div id="level_7" class="hide level" >
+            <div class="center">
+                <div class="map">
+                    <div class="row">
+                        <div  class="place">
+                            ضلع شمالی مسجد
+                        </div>
+                        <div  class="place">
+                            ضلع جنوبی مسجد
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="place">
+                            ضلع شرقی مسجد
+                        </div>
+                        <div class="place">
+                            ضلع فربی مسجد
+                        </div>
+                    </div>
+                </div>
+                <label for="">با توجه به مکانها شماره جایگاه خود را انتخاب نمایید</label>
+                <span class="alert">مکان های رزرو شده در لیست زیر نیستند و امکان رزرو آن ها وجود ندارد</span>
+                <div class="spacer"></div>
+                <div class="input_error" id="location_error" > </div>
+                <label for="row">ردیف</label>
+                <select name="" id="row">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+                <div class="spacer"></div>
+                <label for="col">ستون</label>
+                <select name="" id="col">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+
+               <div class="spacer"></div>
+                <button class="next_level button" level="7" >مکان خود را به درستی وارد کرده ام</button>
+            </div>
+          </div>
+          <div id="level_8" class="hide level" >
+            <div class="center">
+                <div class="success">
+                   
+                    <div class="success_inner">
+                        <h2>ثبت نام شما با موفقیت انجام شد</h2>
+                        <div class="box_rigth">
+                            <span>کد ثبت نام شما : 1234</span>
+                            <span>لطفا این کد را به خاطر داشته باشید</span>
+                        </div>
+                        <a href="#" class="button_green color_x">عضویت در کانال ایتا(اجباری)</a>
+                        <div class="spacer"></div>
+                        <a href="#" class="button_green">دریافت کارت ورود به اعتکاف</a>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+          
+            <div class="end">
+                <span>سوال دارید ؟ تماس با پشتیبانی</span>
+            </div>
+        </div>
+        
+          
+    </section>
+    <script src="assets/script/jquery.js" ></script>
+    <script src="assets/script/script.js"></script>
+</body>
+</html>

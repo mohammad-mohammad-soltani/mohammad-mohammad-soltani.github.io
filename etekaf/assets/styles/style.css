@@ -1,0 +1,359 @@
+:root{
+    --body-font : Yekan;
+    --bg: rgb(241, 241, 241);
+}
+body{
+    justify-content: center; 
+    align-items: center;
+    background-color: var(--bg);
+    display: flex;
+    height: 100vh;
+    margin: 0;
+}
+*{
+    
+    font-family: var(--body-font) ,  sans-serif;
+}
+.content{
+    width: 70%;
+    box-shadow: -3px 3px 10px rgb(0 0 0 / 19%);
+    display: flex;
+    direction: rtl;
+    height: 80vh;
+    border-radius: 30px;
+}
+.content .image{
+    width: 50%;
+    background-image: url("../../image.png");
+    border-radius: 0 20px 20px 0;
+    background-size: cover;
+    background-position: center center;
+
+}
+.content .form  {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+.form .center{
+    justify-content: center;
+    align-items: center ;
+    display: flex;
+    flex-direction: column;
+}
+.form-input{
+    background-color: #dadada;
+    border: none;
+    padding: 10px 20px;
+    width: 70%;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.form-input:focus{
+    outline: none;
+    width: 80%;
+}
+.spacer{
+    width: 100%;
+    height: 10px;
+}
+.button {
+    background-color: #f1ca53;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    width: 50%;
+    font-weight: 200;
+    padding: 7px 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.button:hover{
+    width: 60%;
+}
+.end{
+    width: 100% !important;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    right: 0;
+}
+.end span{
+    background-color: #e7eed5;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hide {
+    display: none ;
+}
+.flex{
+    display: flex  !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.form div:not(.hide,  .input_error){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form div:not(.progress   , .success_data , .success_icon){
+    width: 90%;
+}
+.bold{
+    font-weight: bold;
+    font-size: 20px;
+}
+.form .top{
+    display: flex   ;
+    justify-content: start !important;
+    align-items: start !important;
+    flex-direction: column;
+}
+.form-input2{
+    background-color: #dadada;
+    border: none;
+    padding: 10px 20px;
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.form-input2:focus {
+    outline: none;
+    width: 90%;
+}
+.gap-2{
+    gap: 10px;
+}
+.part_2{
+    position: relative;
+    flex-direction: column;
+    padding: 15px !important;
+}
+.part_2 label {
+    text-align: right ;
+    width: 100%;
+}
+.r_active{
+    background-color: #4e875e !important;
+    color: white;
+    
+}
+.radio  {
+    width: 70%;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.5s;
+    background-color: #e8e8e8;
+}
+.radio:hover{
+    width: 100%;
+}
+.map .row {
+    display: flex;
+    gap: 10px;
+}
+.map .row .place {
+    background-color: #e8e8e8 ;
+    width: 50%;
+    height: 100px;
+    border-radius: 20px;
+    
+    transition: 0.3s ease-in-out;
+}
+.map {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100% !important;
+}
+.place:hover{
+    background-color: #4e875e !important;
+    color: white;
+}
+@media screen and (max-width : 1500px) {
+    .image{
+        display: none !important;
+    }
+    .content {
+        height: 100vh;
+        width: 100%;
+        border-radius: 0;
+    }
+    .form {
+        width: 100% !important; 
+    }
+    .button {
+        width: 70%;
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+    .button:hover {
+        width: 80%;
+    }
+}
+.progress {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 20px;
+    background-color: #4e875e;
+    width: 0%;
+    border-radius: 0 5px 5px 0;
+    z-index: 999;
+    transition: 0.5s;
+}
+.progress_bg {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 20px;
+    background-color: #dadada;
+    width: calc(100% - 30px) !important;
+    border-radius: 5px;
+
+}
+.invalid {
+    border-bottom: 4px   solid rgb(255, 125, 125);
+    border-left: 4px   solid rgba(255, 125, 125, 0.836);
+}
+.input_error{
+    background-color: rgba(255, 0, 0, 0.555);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 10px;
+    display: none;
+}
+.radio:hover {
+    background-color: #4e875e;
+    color: white;
+}
+
+select {
+    width: 70%;
+    padding: 10px;
+    outline: none;
+    background-color: #dadada;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    font-family: Yekan !important;
+
+    text-align: center;
+    transition: 0.2s;
+}
+select:focus{
+    width: 80%;
+}
+.alert{
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f1ca53;
+}
+.success {
+    padding: 10px 5px 20px 20px;
+    background-color: #ddeee2;
+    border-radius: 10px;
+    display: flex;
+
+}
+.success_icon{
+    width: 10%;
+    
+}
+.success_icon img{
+    width: 100%;
+}
+.success_data{
+    width: 90%;
+}
+.success_inner{
+    flex-direction: column;
+}
+.box_rigth {
+    justify-content: start !important;
+    align-items: start !important;
+    flex-direction: column !important;
+}
+.success_inner span{
+    font-size: 15px;
+}
+.button_green{
+    text-decoration: none;
+    color: white;
+    background-color: #4e875e;
+    width: 80%;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 50px;
+    transition: 0.5s ;
+    border: 3px solid transparent;
+}
+.button_green:hover{
+    width: 95%;
+    background-color: transparent;
+    color: black;
+    border: 3px solid #4e875e;
+    padding: 15px 0;
+}
+.color_x{
+    background-color: #fffeec ;
+    color: black;
+}
+input[type=file]{
+    display: none;
+}
+.zone img{
+    width: 50%;
+}
+.zone{
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 30px 0;
+    transition: 0.5s;
+    width: 100% !important;
+    flex-direction: column;
+}
+.label{
+    width: 100% ;
+    padding: 5px;
+}
+label h3{
+    text-align: center;
+    font-size: auto;
+}
+#level_5 h2{
+    font-size: 15px;
+    text-align: right;
+    width: 80%;
+}
+.card_data{
+    background-color: #dadada;
+    width: 90%;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 50px;
+}
+#level_5 h2 , #level_5 h3{
+    margin: 5px;
+}
+.card_data {
+    font-weight: 400;
+}
+.card_number{
+    letter-spacing: 10px;
+}
