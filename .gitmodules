@@ -13,3 +13,6 @@
 [submodule "Simple-Web-Theme"]
 	path = Simple-Web-Theme
 	url = https://github.com/mohammad-mohammad-soltani/simple-web-theme
+[submodule "SigmaGoogle"]
+	path = SigmaGoogle
+	url = https://github.com/mohammad-mohammad-soltani/SigmaGoogle
