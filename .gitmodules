@@ -4,3 +4,12 @@
 [submodule "SingJS"]
 	path = SingJS
 	url = https://github.com/mohammad-mohammad-soltani/SingJS.git
+[submodule "Starry-Night-Game"]
+	path = Starry-Night-Game
+	url = https://github.com/mohammad-mohammad-soltani/Starry-Night-Game
+[submodule "MATH-SNAKE"]
+	path = MATH-SNAKE
+	url = https://github.com/mohammad-mohammad-soltani/MATH-SNAKE.git
+[submodule "Simple-Web-Theme"]
+	path = Simple-Web-Theme
+	url = https://github.com/mohammad-mohammad-soltani/simple-web-theme
