@@ -289,6 +289,7 @@ pre {
         font-size : 12px !important;
     }
     .side_bar {
+        
         width : 30%;
     }
     greenline{
@@ -375,11 +376,11 @@ pre {
     }
     
 }
-@media screen and (max-width : 500px) {
+@media screen and (max-width : 800px) {
     .side_bar{
         top: 0;
         width: 85%;
-        right: -0 !important;
+        right: 2.5% !important;
     }
     .github .text {
         font-size: 12px;
