@@ -401,6 +401,8 @@ pre {
 @media screen and (max-width : 800px) {
     body{
         backdrop-filter: none !important;
+        background-blend-mode: multiply;
+        background-color: #2b2b2b;
     }
     .github .text {
         font-size: 12px;
