@@ -359,7 +359,7 @@ pre {
         display: block !important;
     }
     .cover{
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         height: 100%;
@@ -375,13 +375,31 @@ pre {
         width: 95% !important;
     }
     
+}   
+@media screen and (max-width : 900px) and (min-width : 700px) {
+    .side_bar{
+        top: 0;
+        width: 90% !important;
+        right: 1% !important;
+    }
 }
-@media screen and (max-width : 800px) {
+@media screen and (max-width : 700px) and (min-width : 500px) {
+    .side_bar{
+        top: 0;
+        width: 90% !important;
+        right: 0% !important;
+    }
+}
+@media screen and (max-width : 500px) {
     .side_bar{
         top: 0;
         width: 85%;
-        right: 2.5% !important;
+        right: 1% !important;
     }
+    
+}
+@media screen and (max-width : 800px) {
+    
     .github .text {
         font-size: 12px;
     }
