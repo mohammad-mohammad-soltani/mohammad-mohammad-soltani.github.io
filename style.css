@@ -14,7 +14,7 @@ body{
 .side_bar{
     width: 20%;
     padding: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 40px; 
     position: relative !important;
 }
 .side_bar .inner{
@@ -103,10 +103,8 @@ body{
     height: 150px;
     border-radius: 50%;
     background-image: url(profile.jpg);
-    background-size: cover;
-    background-position: calc(center - 20px);
-    border: 4px solid var(--profile_theme);
-    box-shadow: 0 0 10px 2px var(--profile_theme) , inset 0 0 10px 2px var(--profile_theme);
+    background-size: 120%;
+    background-position: 0 -20px ;
 }
 h1{
     text-align: center;
@@ -221,16 +219,19 @@ greenline::after{
 .head {
     direction: ltr;
     position: absolute;
-    width: 100%;
-    height: 8%;
+    width: calc(100% - 10px);
+    
     border-radius: 20px ;
     background-color: white;   
-    
+    display: flex;
+    padding: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 .code{
-    width: 10%;
-    position: absolute;
+    width: 30%;
     top: 0;
     height: 72.5%;
     border-radius: 20px 0 0 20px;
@@ -239,7 +240,6 @@ greenline::after{
 
 }
 .code .icon {
-    width: 20%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -281,7 +281,7 @@ pre {
     height: 20px;
 
 }
-@media screen and (min-width : 1000px)  and (max-width : 1500px) {
+@media screen and (min-width : 800px)  and (max-width : 1500px) {
     .spacer {
         height: 0px !important;
     }
@@ -315,7 +315,7 @@ pre {
         padding-left: 30px;
     }
 }
-@media screen and (max-width : 800px) {
+@media screen and (max-width : 900px) {
     .side_bar {
         position: absolute !important;
         width: 80%;
@@ -335,14 +335,13 @@ pre {
         overflow-x: none;
     }
     #show{
-        content: "About Me";
         padding: 20px 10px;
         background-color: #26A269 ;
         border-radius: 20px;
         color: white;
-        position: absolute;
         right : 10px !important;
         top: 10%;
+        margin-left: auto;  
         border: none;
         display: block !important;
     }
@@ -431,4 +430,8 @@ pre {
 .changed{
     opacity: 0;
     
+}
+.terminal{
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
 }
