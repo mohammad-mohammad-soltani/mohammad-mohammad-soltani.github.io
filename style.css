@@ -399,7 +399,9 @@ pre {
     
 }
 @media screen and (max-width : 800px) {
-    
+    body{
+        backdrop-filter: none !important;
+    }
     .github .text {
         font-size: 12px;
     }
