@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>درباره من - محمد محمد سلطانی</title>
+    
+    <!-- متا تگ برای SEO -->
+    <meta name="description" content="من محمد محمد سلطانی هستم، یه دانش آموز اصفهانی و توسعه‌دهنده وب با علاقه به برنامه‌نویسی.">
+    <meta name="keywords" content="محمد محمد سلطانی, توسعه‌دهنده وب, برنامه نویس, دانش آموز, اصفهان">
+    <meta name="author" content="محمد محمد سلطانی">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="درباره من - محمد محمد سلطانی" />
+    <meta property="og:description" content="من محمد محمد سلطانی هستم، یه دانش آموز اصفهانی و توسعه‌دهنده وب با علاقه به برنامه‌نویسی." />
+    <meta property="og:image" content="https://mohammad-mohammad-soltani.github.io/fa/image.png" />
+    <meta property="og:url" content="https://mohammad-mohammad-soltani.github.io/fa/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fa_IR" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="درباره من - محمد محمد سلطانی" />
+    <meta name="twitter:description" content="من محمد محمد سلطانی هستم، یه دانش آموز اصفهانی و توسعه‌دهنده وب با علاقه به برنامه‌نویسی." />
+    <meta name="twitter:image" content="https://mohammad-mohammad-soltani.github.io/fa/image.png" />
+    
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="fonts/yekan/yekan.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+        <div class="header">
+          <h1>محمد محمد سلطانی</h1>
+          <button class="hamburger" id="hamburger">&#9776;</button>
+          <ul class="menu" id="menu">
+            <li><a href="#">درباره من</a></li>
+            <li><a href="#">مهارت‌ها</a></li>
+            <li><a href="#">افتخارات</a></li>
+            <li><a href="#">منابع</a></li>
+          </ul>
+        </div>
+      </header>
+      
+
+    <section class="hero">
+      <img src="image.png" alt="محمد محمد سلطانی" class="profile-pic" />
+      <div class="intro">
+        <h2>سلام! من محمد هستم</h2>
+        <p>توسعه‌دهنده وب و عاشق برنامه‌نویسی.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <h3>درباره من</h3>
+      <p>
+        من محمد محمد سلطانی هستم، دانش‌آموزی از اصفهان و برنامه‌نویس  .
+        به زبان‌های وب و هوش مصنوعی علاقه‌مندم و پروژه‌هایی در این زمینه انجام دادم.   
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h3>مهارت‌ها</h3>
+      <ul>
+        <li>PHP و Laravel</li>
+        <li>HTML، CSS، JavaScript</li>
+        <li>Tailwind , BootStrap</li>
+        <li>LiveWire</li>
+
+      </ul>
+    </section>
+
+    <section id="achievements" class="section">
+      <h3>افتخارات</h3>
+      <ul>
+        <li>رتبه سوم استان جشنواره خوارزمی سال 1403</li>
+        <li>رتبه اول ناحیه جشنواره خوارزمی سال 1403</li>
+        <li>رتبه دوم ناحیه جشنواره خوارزمی سال 1402</li>
+        <li>رتبه سوم ناحیه جشنواره خوارزمی سال 1401</li>
+
+      </ul>
+    </section>
+
+    <section id="resources" class="section">
+      <h3>منابع و پروژه‌ها</h3>
+      <ul>
+        <li><a href="https://github.com/mohammad-mohammad-soltani" target="_blank">GitHub</a></li>
+        <li><a href="https://afm-ai.ir" target="_blank">پروژه AFM (به اتمام رسیده)</a></li>
+      </ul>
+    </section>
+    <section id="contact_me" class="section">
+        <h3>ارتباط با من</h3>
+        <ul>
+          <li><a href="tel:09140275311" target="_blank">شماره تلفن فعال در پیامرسان های ایتا ، بله و تلگرام</a></li>
+        </ul>
+      </section>
+  </div>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('menu');
+  
+    hamburger.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
+  
+</body>
+</html>
