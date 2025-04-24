@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- صفحه اصلی سایت -->
+    <url>
+        <loc>https://mohammad-mohammad-soltani.github.io/</loc>
+        <lastmod>2025-04-24</lastmod> <!-- تاریخ آخرین به‌روزرسانی (تاریخ فعلی) -->
+        <priority>1.0</priority> <!-- اولویت صفحه -->
+    </url>
+    
+    <!-- صفحه /fa/ سایت -->
+    <url>
+        <loc>https://mohammad-mohammad-soltani.github.io/fa/</loc>
+        <lastmod>2025-04-24</lastmod> <!-- تاریخ آخرین به‌روزرسانی (تاریخ فعلی) -->
+        <priority>0.8</priority> <!-- اولویت صفحه -->
+    </url>
+</urlset>
