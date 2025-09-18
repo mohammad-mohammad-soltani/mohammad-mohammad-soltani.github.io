@@ -1,0 +1,15 @@
+@font-face {
+    font-family: kalameBlack;
+    src: url("./_Woff/kalame_black.woff");
+    font-weight: bolder ;
+}
+@font-face {
+    font-family: kalameBold;
+    src: url("./_Woff/KalamehWeb\(FaNum\)-Bold.woff");
+    font-weight: bold;
+}
+@font-face {
+    font-family: kalameRegular;
+    src: url("./_Woff/KalamehWeb\(FaNum\)-Medium.woff");
+    font-weight: 500;
+}
