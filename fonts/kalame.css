@@ -1,20 +1,20 @@
 @font-face {
     font-family: "kalameBlack";
-    src: url("_Woff/kalame_black.woff") format("woff");
+    src: url("Woff/kalame_black.woff") format("woff");
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: "kalameBold";
-    src: url("_Woff/KalamehWeb-FaNum-Bold.woff") format("woff");
+    src: url("Woff/KalamehWeb-FaNum-Bold.woff") format("woff");
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: "kalameRegular";
-    src: url("_Woff/KalamehWeb(FaNum)-Regular.woff") format("woff");
+    src: url("Woff/KalamehWeb(FaNum)-Regular.woff") format("woff");
     font-weight: 500;
     font-style: normal;
 }
