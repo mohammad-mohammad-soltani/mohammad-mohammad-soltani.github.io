@@ -1,16 +1,31 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="en" dir="ltr" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mohammad Mohammad Soltani — Full-Stack Web Developer</title>
-  <meta name="description" content="Mohammad Mohammad Soltani — full-stack web developer crafting modern, high-performance websites with PHP, Laravel, Tailwind CSS and JavaScript. Award-winning competitive programmer.">
+  <title>Mohammad Mohammad Soltani | Full-Stack Web Developer</title>
+  <meta name="description" content="Mohammad Mohammad Soltani is a full-stack web developer building modern, fast websites with PHP, Laravel, React, Next.js and JavaScript while learning networking, machine learning and AI.">
+  <meta name="author" content="Mohammad Mohammad Soltani">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://mohammad-mohammad-soltani.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mohammad Mohammad Soltani">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://mohammad-mohammad-soltani.github.io/">
+  <meta property="og:title" content="Mohammad Mohammad Soltani | Full-Stack Web Developer">
+  <meta property="og:description" content="Full-stack web developer building modern, fast websites while learning networking, machine learning and AI.">
+  <meta property="og:image" content="https://mohammad-mohammad-soltani.github.io/portrait.jpg">
+  <meta property="og:image:alt" content="Portrait of Mohammad Mohammad Soltani">
+  <meta property="og:image:width" content="415">
+  <meta property="og:image:height" content="559">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20261213">
 
   <script type="importmap">
   {
@@ -23,16 +38,29 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Mohammad Mohammad Soltani",
-    "jobTitle": "Full Stack Web Developer",
-    "image": "portrait.jpg",
+    "@type": "ProfilePage",
+    "name": "Mohammad Mohammad Soltani | Full-Stack Web Developer",
     "url": "https://mohammad-mohammad-soltani.github.io/",
-    "sameAs": [
-      "https://github.com/mohammad-mohammad-soltani",
-      "https://t.me/FullStackDevIR",
-      "https://x.com/FullStackDevIR"
-    ]
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Mohammad Mohammad Soltani",
+      "givenName": "Mohammad",
+      "familyName": "Mohammad Soltani",
+      "jobTitle": "Full-Stack Web Developer",
+      "description": "Mohammad Mohammad Soltani is a full-stack web developer building modern web products while learning networking, machine learning and AI.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://mohammad-mohammad-soltani.github.io/portrait.jpg",
+        "width": 415,
+        "height": 559
+      },
+      "url": "https://mohammad-mohammad-soltani.github.io/",
+      "knowsAbout": ["PHP", "Laravel", "HTML", "CSS", "JavaScript", "Tailwind CSS", "React", "Next.js", "Bootstrap", "Livewire", "Docker", "Linux", "Networking", "Python", "PostgreSQL", "SQL", "Redis", "MySQL", "MongoDB", "OpenCV", "PyTorch", "Artificial Intelligence"],
+      "sameAs": [
+        "https://github.com/mohammad-mohammad-soltani",
+        "https://t.me/FullStackDevIR"
+      ]
+    }
   }
   </script>
   <script>document.documentElement.className = 'js';</script>
@@ -41,110 +69,87 @@
 
   <canvas id="particles" aria-hidden="true"></canvas>
   <div class="progress" id="progress"></div>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
 
-  <!-- ================= HEADER ================= -->
   <header class="topbar">
     <div class="wrap">
-      <a class="logo" href="#top">mohammad<b>.dev</b><span class="caret" aria-hidden="true"></span></a>
-      <nav aria-label="Primary">
+      <a class="logo" href="#top" aria-label="Mohammad Mohammad Soltani, home">ms<span>.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">
+        <span class="sr-only">Menu</span>
+        <span class="burger" aria-hidden="true"><i></i><i></i><i></i></span>
+      </button>
+
+      <nav id="primaryNav" aria-label="Primary">
         <ul class="nav-links">
-          <li><a href="#about" data-nav>About</a></li>
-          <li><a href="#awards" data-nav>Awards</a></li>
-          <li><a href="#contact" data-nav>Contact</a></li>
+          <li><a href="#about" data-nav data-i18n="navAbout">About</a></li>
+          <li><a href="#work" data-nav data-i18n="navWork">Work</a></li>
+          <li><a href="#awards" data-nav data-i18n="navAwards">Awards</a></li>
+          <li><a href="#contact" data-nav data-i18n="navContact">Contact</a></li>
         </ul>
       </nav>
-      <a class="status-chip" href="#contact">
-        <span class="dot" aria-hidden="true"></span>
-        <span class="txt">Open&nbsp;to&nbsp;work</span>
-      </a>
+
+      <div class="topbar-end">
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch to Persian" aria-pressed="false">
+          <span class="lang-active">EN</span><span class="lang-divider">/</span><span>FA</span>
+        </button>
+        <a class="remix-btn magnetic" href="#contact" data-i18n="navCta">Let's talk</a>
+      </div>
     </div>
   </header>
 
-  <!-- ================= SIDE RAILS ================= -->
-  <div class="social-rail">
-    <a href="https://github.com/mohammad-mohammad-soltani" target="_blank" rel="noopener" aria-label="GitHub" data-label="@mohammad-mohammad-soltani">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-    </a>
-    <a href="https://t.me/FullStackDevIR" target="_blank" rel="noopener" aria-label="Telegram" data-label="@FullStackDevIR">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
-    </a>
-    <a href="mailto:mypc264fm@gmail.com" aria-label="Email" data-label="mypc264fm@gmail.com">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-    </a>
-  </div>
-
-  <nav class="dots-nav" aria-label="Sections">
-    <button data-goto="top" class="active" aria-label="Home"><span class="pip"></span></button>
-    <button data-goto="about" aria-label="About"><span class="pip"></span></button>
-    <button data-goto="awards" aria-label="Awards"><span class="pip"></span></button>
-    <button data-goto="contact" aria-label="Contact"><span class="pip"></span></button>
-  </nav>
-
   <main id="top">
 
-    <!-- ================= HERO ================= -->
-    <section class="hero wrap" aria-label="Intro">
-      <div class="hero-topline" data-reveal>
-        <p class="hero-kicker">Full-Stack Web Developer</p>
-        <p class="hero-loc">Based in Iran<br>Available worldwide — remote</p>
-      </div>
+    <section class="hero" aria-label="Intro">
+      <p class="hero-kicker" data-reveal>Crafting digital goods since &mdash; Y:2017</p>
 
-      <h1 class="giant">
-        <span class="row" data-reveal style="--d:.08s">
-          <span class="solid-word">Mohammad</span>
-          <span class="portrait-wrap">
-            <span class="portrait-corner tl" aria-hidden="true"></span>
-            <span class="portrait-slot tilt" id="tiltCard">
-              <img src="portrait.jpg" alt="Portrait of Mohammad Mohammad Soltani, full-stack web developer" fetchpriority="high">
-              <span class="glare" aria-hidden="true"></span>
-            </span>
-            <span class="portrait-corner br" aria-hidden="true"></span>
+      <h1 class="giant language-fixed" dir="ltr">
+        <span class="row" data-reveal style="--d:.06s">
+          <span class="word">MOH</span>
+          <span class="portrait-slot tilt" id="tiltCard">
+            <img src="portrait.jpg" alt="Portrait of Mohammad Mohammad Soltani, full-stack web developer" fetchpriority="high" width="360" height="460">
+            <span class="glare" aria-hidden="true"></span>
           </span>
+          <span class="word">MMAD</span>
         </span>
-        <span class="row indent" data-reveal style="--d:.18s">
-          <span class="stroke-word glitch" data-text="SOLTANI">SOLTANI</span>
+        <span class="row" data-reveal style="--d:.16s">
+          <span class="word">SOLTANI</span>
         </span>
       </h1>
 
-      <div class="hero-bottom">
-        <div data-reveal style="--d:.3s">
-          <p class="type-line"><span class="prompt">$</span><span class="typed" id="typed"></span><span class="cursor" aria-hidden="true"></span></p>
-          <p class="hero-sub">I design &amp; build <strong>modern, fast, user-friendly</strong> web apps — from <strong>PHP / Laravel</strong> backends to pixel-perfect frontends with <strong>Tailwind &amp; JavaScript</strong>, plus <strong>Three.js</strong> for 3D on the web.</p>
-        </div>
-        <div class="hero-cta" data-reveal style="--d:.42s">
-          <a class="btn btn-primary magnetic" href="#about">More about me
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
-          </a>
-          <a class="btn btn-ghost magnetic" href="#contact">Let's talk
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-          </a>
-        </div>
+      <div class="spark" data-reveal style="--d:.3s" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 0 L14.2 9.8 L24 12 L14.2 14.2 L12 24 L9.8 14.2 L0 12 L9.8 9.8 Z"/></svg>
       </div>
 
+      <p class="hero-sub" data-reveal style="--d:.38s">
+        I&rsquo;m Mohammad Mohammad Soltani &mdash; a full-stack developer<br>
+        turning ideas into fast, thoughtful digital experiences.<br>
+        I build modern web products while exploring networks,<br>
+        machine learning, and AI.
+      </p>
+
       <div class="scroll-hint" aria-hidden="true">
-        <span>Scroll</span>
+        <span data-i18n="scrollLabel">Scroll</span>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
       </div>
     </section>
 
-    <!-- ================= MARQUEE ================= -->
     <div class="marquee-strip" aria-hidden="true">
       <div class="marquee-track">
-        <span>Laravel</span><span>PHP</span><span>Tailwind</span><span>JavaScript</span><span>Three.js</span><span>Bootstrap</span><span>jQuery</span><span>MySQL</span>
-        <span>Laravel</span><span>PHP</span><span>Tailwind</span><span>JavaScript</span><span>Three.js</span><span>Bootstrap</span><span>jQuery</span><span>MySQL</span>
+        <div class="marquee-group" aria-hidden="true"><span>Laravel</span><span>PHP</span><span>React</span><span>Next.js</span><span>Tailwind</span><span>JavaScript</span><span>Docker</span><span>Python</span><span>AI</span></div>
+        <div class="marquee-group" aria-hidden="true"><span>Laravel</span><span>PHP</span><span>React</span><span>Next.js</span><span>Tailwind</span><span>JavaScript</span><span>Docker</span><span>Python</span><span>AI</span></div>
       </div>
     </div>
 
-    <!-- ================= ABOUT ================= -->
     <section id="about" class="panel wrap">
       <div class="sec-head" data-reveal>
         <span class="sec-num">01</span>
-        <h2>About <em>me</em></h2>
+        <h2 data-i18n="aboutTitle">About <em>me</em></h2>
         <span class="rule" aria-hidden="true"></span>
       </div>
 
       <div class="about-grid">
-        <div class="terminal chamfer-none" data-reveal style="--d:.1s">
+        <div class="terminal language-fixed" dir="ltr" data-reveal style="--d:.1s">
           <div class="terminal-bar">
             <span class="tdot"></span><span class="tdot"></span><span class="tdot"></span>
             <span class="ttitle">mohammad@dev: ~/about</span>
@@ -154,52 +159,121 @@
             <p class="ln"><span class="cmt">// Full-stack developer &amp; competitive programmer</span></p>
             <p class="ln"><span class="k">const</span> <span class="cmd">mohammad</span> = {</p>
             <p class="ln">  role: <span class="s">"Full-Stack Web Developer"</span>,</p>
-            <p class="ln">  backend: [<span class="s">"PHP"</span>, <span class="s">"Laravel"</span>],</p>
-            <p class="ln">  frontend: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JS"</span>, <span class="s">"Tailwind"</span>, <span class="s">"Bootstrap"</span>],</p>
-            <p class="ln">  threeD: <span class="s">"Three.js"</span>,  <span class="cmt">// 3D worlds &amp; web games</span></p>
-            <p class="ln">  mission: <span class="s">"ship professional sites that feel great to use"</span></p>
+            <p class="ln">  learning: [<span class="s">"Networking"</span>, <span class="s">"Machine Learning"</span>],</p>
+            <p class="ln">  web: [<span class="s">"PHP"</span>, <span class="s">"Laravel"</span>, <span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JavaScript"</span>],</p>
+            <p class="ln">  modernWeb: [<span class="s">"Tailwind"</span>, <span class="s">"React"</span>, <span class="s">"Next.js"</span>, <span class="s">"Bootstrap"</span>, <span class="s">"Livewire"</span>],</p>
+            <p class="ln">  systems: [<span class="s">"Docker"</span>, <span class="s">"Linux"</span>, <span class="s">"Networking"</span>, <span class="s">"Python"</span>],</p>
+            <p class="ln">  databases: [<span class="s">"PostgreSQL"</span>, <span class="s">"SQL"</span>, <span class="s">"Redis"</span>, <span class="s">"MySQL"</span>, <span class="s">"MongoDB"</span>],</p>
+            <p class="ln">  ai: [<span class="s">"OpenCV"</span>, <span class="s">"PyTorch"</span>, <span class="s">"Anything with AI"</span>],</p>
+            <p class="ln">  mission: <span class="s">"build useful things and keep learning"</span></p>
             <p class="ln">};</p>
             <p class="ln"><span class="p">$</span><span class="cmd">status</span> <span class="cmt"># ready for new projects</span> <span class="cursor-block"></span></p>
           </div>
         </div>
 
         <div class="about-copy" data-reveal style="--d:.2s">
-          <p>Hi! I'm Mohammad — a full-stack web developer with a deep passion for <strong>modern, optimized, user-friendly websites</strong>.</p>
-          <p>On the backend I work with <strong>PHP</strong> and the <strong>Laravel</strong> framework; on the frontend I build with <strong>HTML, CSS and JavaScript</strong>, using <strong>Bootstrap, Tailwind CSS and jQuery</strong>. I also have hands-on experience with <strong>Three.js</strong> for building 3D environments and browser-based games.</p>
-          <p>I've competed in several programming contests and placed at the top — experiences that sharpened my <span class="hl">problem-solving mindset</span> and fast-learning habits.</p>
+          <p data-i18n="aboutIntro">I'm <strong>Mohammad Mohammad Soltani</strong> &mdash; a <strong>full-stack web developer</strong> currently learning <strong>networking</strong> and <strong>machine learning</strong>.</p>
+          <p data-i18n="aboutStack">I build modern web products with <strong>PHP, Laravel, HTML, JavaScript, CSS, Tailwind, React, Next.js, Bootstrap</strong> and <strong>Livewire</strong>. I also work with <strong>Docker</strong>, <strong>Linux</strong> and <strong>Python</strong>, backed by PostgreSQL, SQL, Redis, MySQL and MongoDB.</p>
+          <p data-i18n="aboutAi">My AI toolkit includes <strong>OpenCV</strong>, <strong>PyTorch</strong> and anything that helps turn an idea into a useful AI-powered experience. Programming contests have sharpened my <span class="hl">problem-solving mindset</span> and fast-learning habits.</p>
           <div class="chip-row" aria-label="Tech stack">
             <span class="chip">PHP</span>
             <span class="chip">Laravel</span>
-            <span class="chip">Tailwind CSS</span>
+            <span class="chip">HTML</span>
             <span class="chip">JavaScript</span>
-            <span class="chip">Three.js</span>
-            <span class="chip">MySQL</span>
+            <span class="chip">CSS</span>
+            <span class="chip">Tailwind</span>
+            <span class="chip">React</span>
+            <span class="chip">Next.js</span>
             <span class="chip">Bootstrap</span>
-            <span class="chip">jQuery</span>
+            <span class="chip">Livewire</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Networking</span>
+            <span class="chip">Python</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">SQL</span>
+            <span class="chip">Redis</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">OpenCV</span>
+            <span class="chip">PyTorch</span>
+            <span class="chip">AI</span>
           </div>
           <div class="stats-row">
             <div class="stat spot-card">
               <div class="num" data-count="1"><sup>st</sup></div>
-              <div class="lbl">National rank</div>
+              <div class="lbl" data-i18n="statRank">National rank</div>
             </div>
             <div class="stat spot-card">
               <div class="num" data-count="4"><sup>+</sup></div>
-              <div class="lbl">Contest awards</div>
+              <div class="lbl" data-i18n="statAwards">Contest awards</div>
             </div>
             <div class="stat spot-card">
               <div class="num" data-count="100"><sup>%</sup></div>
-              <div class="lbl">Commitment</div>
+              <div class="lbl" data-i18n="statCommitment">Commitment</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================= AWARDS ================= -->
-    <section id="awards" class="panel wrap">
+    <section id="work" class="panel wrap">
       <div class="sec-head" data-reveal>
         <span class="sec-num">02</span>
-        <h2>Contest <em>honors</em></h2>
+        <h2 data-i18n="workTitle">Selected <em>work</em></h2>
+        <span class="rule" aria-hidden="true"></span>
+      </div>
+
+      <ul class="work-list">
+        <li data-reveal style="--d:.05s">
+          <a class="work-item" href="https://naghshman.ir" target="_blank" rel="noopener">
+            <span class="work-num">01</span>
+            <span class="work-body">
+              <span class="work-title" data-i18n="projectNaghshmanTitle">Naghshman</span>
+              <span class="work-desc" data-i18n="projectNaghshmanDesc">A nationwide social action network for documenting and sharing people-led movements, local campaigns, media stories, and live activity across Iran.</span>
+            </span>
+            <span class="work-tags"><span data-i18n="tagSocial">Social action</span><span data-i18n="tagCampaigns">Campaigns</span><span data-i18n="tagLiveMap">Live map</span></span>
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+          </a>
+        </li>
+        <li data-reveal style="--d:.11s">
+          <a class="work-item" href="https://nabzjahan.ir/" target="_blank" rel="noopener">
+            <span class="work-num">02</span>
+            <span class="work-body">
+              <span class="work-title" data-i18n="projectNabzTitle">Nabz Jahan</span>
+              <span class="work-desc" data-i18n="projectNabzDesc">A Persian news platform bringing together updates and analysis about Iran, the region, and the world from multiple newsrooms.</span>
+            </span>
+            <span class="work-tags"><span data-i18n="tagNews">News aggregation</span><span data-i18n="tagSearch">Search</span><span data-i18n="tagMedia">Media</span></span>
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+          </a>
+        </li>
+        <li data-reveal style="--d:.17s">
+          <a class="work-item" href="https://github.com/mohammad-mohammad-soltani/ClaudeAddonTools" target="_blank" rel="noopener">
+            <span class="work-num">03</span>
+            <span class="work-body">
+              <span class="work-title" data-i18n="projectClaudeTitle">Claude Addon Tools</span>
+              <span class="work-desc" data-i18n="projectClaudeDesc">A GNOME Shell companion for Claude Code with real-time session status, top-bar permission controls, Persian translation, and IP-based safety management.</span>
+            </span>
+            <span class="work-tags"><span>GNOME Shell</span><span>Python</span><span>Claude Code</span></span>
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+          </a>
+        </li>
+        <li class="work-more" data-reveal style="--d:.23s">
+          <a href="https://github.com/mohammad-mohammad-soltani" target="_blank" rel="noopener">
+            <span class="work-more-copy">
+              <span class="work-more-title" data-i18n="moreTitle">More projects on GitHub</span>
+              <span class="work-more-desc" data-i18n="moreDesc">Explore the rest of my experiments, applications, and code.</span>
+            </span>
+            <span class="work-arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="awards" class="panel wrap">
+      <div class="sec-head" data-reveal>
+        <span class="sec-num">03</span>
+        <h2 data-i18n="awardsTitle">Contest <em>honors</em></h2>
         <span class="rule" aria-hidden="true"></span>
       </div>
 
@@ -208,28 +282,26 @@
           <div class="award-top">
             <span class="rank">01</span>
             <span class="rank-meta">
-              <span class="year-chip">2025 / 1404</span>
-              <span class="win-tag">Winner</span>
+              <span class="year-chip">2025</span>
+              <span class="win-tag" data-i18n="awardWinner">Winner</span>
             </span>
           </div>
-          <h3>Sadat ACM Programming Contest</h3>
+          <h3 data-i18n="awardSadat">Sadat ACM Programming Contest</h3>
           <span class="org">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
-            Sadat ACM — 1st place
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
+            <span data-i18n="awardSadatOrg">Sadat ACM &mdash; 1st place</span>
           </span>
         </li>
 
         <li class="award spot-card" data-reveal style="--d:.12s">
           <div class="award-top">
             <span class="rank">03</span>
-            <span class="rank-meta">
-              <span class="year-chip">2024 / 1403</span>
-            </span>
+            <span class="rank-meta"><span class="year-chip">2024</span></span>
           </div>
-          <h3>Kharazmi Youth Festival</h3>
+          <h3 data-i18n="awardKharazmi">Kharazmi Youth Festival</h3>
           <span class="org">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
-            Provincial — 3rd place
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
+            <span data-i18n="awardProvincial">Provincial &mdash; 3rd place</span>
           </span>
         </li>
 
@@ -237,45 +309,42 @@
           <div class="award-top">
             <span class="rank">01</span>
             <span class="rank-meta">
-              <span class="year-chip">2024 / 1403</span>
-              <span class="win-tag">Winner</span>
+              <span class="year-chip">2024</span>
+              <span class="win-tag" data-i18n="awardWinner">Winner</span>
             </span>
           </div>
-          <h3>Kharazmi Youth Festival</h3>
+          <h3 data-i18n="awardKharazmi">Kharazmi Youth Festival</h3>
           <span class="org">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
-            District — 1st place
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
+            <span data-i18n="awardDistrictFirst">District &mdash; 1st place</span>
           </span>
         </li>
 
         <li class="award spot-card" data-reveal style="--d:.26s">
           <div class="award-top">
             <span class="rank">03</span>
-            <span class="rank-meta">
-              <span class="year-chip">2023 / 1402</span>
-            </span>
+            <span class="rank-meta"><span class="year-chip">2023</span></span>
           </div>
-          <h3>Kharazmi Youth Festival</h3>
+          <h3 data-i18n="awardKharazmi">Kharazmi Youth Festival</h3>
           <span class="org">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
-            District — 3rd place
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.735H5.81a1 1 0 0 1-.957-.735L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
+            <span data-i18n="awardDistrictThird">District &mdash; 3rd place</span>
           </span>
         </li>
       </ul>
     </section>
 
-    <!-- ================= CONTACT ================= -->
     <section id="contact" class="panel wrap">
       <div class="sec-head" data-reveal>
-        <span class="sec-num">03</span>
-        <h2>Get in <em>touch</em></h2>
+        <span class="sec-num">04</span>
+        <h2 data-i18n="contactTitle">Get in <em>touch</em></h2>
         <span class="rule" aria-hidden="true"></span>
       </div>
 
-      <h3 class="contact-title" data-reveal style="--d:.08s">
+      <h3 class="contact-title" data-reveal style="--d:.08s" data-i18n="contactHeadline">
         Let's build something <span class="hl">great</span>.
       </h3>
-      <p class="contact-sub" data-reveal style="--d:.16s">
+      <p class="contact-sub" data-reveal style="--d:.16s" data-i18n="contactSub">
         Got a project in mind? I'm ready to design and ship a website that is technically solid
         and genuinely enjoyable to use. Pick a channel:
       </p>
@@ -283,61 +352,29 @@
       <ul class="contact-list">
         <li data-reveal style="--d:.2s">
           <a class="contact-item spot-card" href="https://github.com/mohammad-mohammad-soltani" target="_blank" rel="noopener">
-            <span class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-            </span>
-            <span class="contact-info">
-              <span class="platform">GitHub</span>
-              <span class="value">@mohammad-mohammad-soltani</span>
-            </span>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></span>
+            <span class="contact-info"><span class="platform" data-i18n="contactGithub">GitHub</span><span class="value">@mohammad-mohammad-soltani</span></span>
             <span class="contact-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
           </a>
         </li>
         <li data-reveal style="--d:.26s">
           <a class="contact-item spot-card" href="https://t.me/FullStackDevIR" target="_blank" rel="noopener">
-            <span class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
-            </span>
-            <span class="contact-info">
-              <span class="platform">Telegram</span>
-              <span class="value">@FullStackDevIR</span>
-            </span>
-            <span class="contact-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
-          </a>
-        </li>
-        <li data-reveal style="--d:.32s">
-          <a class="contact-item spot-card" href="https://x.com/FullStackDevIR" target="_blank" rel="noopener">
-            <span class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-            </span>
-            <span class="contact-info">
-              <span class="platform">X / Twitter</span>
-              <span class="value">@FullStackDevIR</span>
-            </span>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></span>
+            <span class="contact-info"><span class="platform" data-i18n="contactTelegram">Telegram</span><span class="value">@FullStackDevIR</span></span>
             <span class="contact-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
           </a>
         </li>
         <li data-reveal style="--d:.38s">
           <a class="contact-item spot-card" href="mailto:mypc264fm@gmail.com">
-            <span class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            </span>
-            <span class="contact-info">
-              <span class="platform">Email</span>
-              <span class="value">mypc264fm@gmail.com</span>
-            </span>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
+            <span class="contact-info"><span class="platform" data-i18n="contactEmail">Email</span><span class="value">mypc264fm@gmail.com</span></span>
             <span class="contact-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
           </a>
         </li>
         <li data-reveal style="--d:.44s">
           <a class="contact-item spot-card" href="tel:+989140275311">
-            <span class="contact-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </span>
-            <span class="contact-info">
-              <span class="platform">Phone / SMS</span>
-              <span class="value" dir="ltr">+98 914 027 5311</span>
-            </span>
+            <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span class="contact-info"><span class="platform" data-i18n="contactPhone">Phone / SMS</span><span class="value" dir="ltr">+98 914 027 5311</span></span>
             <span class="contact-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></span>
           </a>
         </li>
@@ -347,12 +384,12 @@
 
   <footer>
     <div class="wrap">
-      <p>&copy; 2026 Mohammad Mohammad Soltani — All rights reserved.</p>
-      <p><span class="g">&lt;/&gt;</span> Designed &amp; built by me</p>
+      <p>&copy; 2026 Mohammad Mohammad Soltani &mdash; All rights reserved.</p>
+      <p><span class="g">&lt;/&gt;</span> <span data-i18n="footerBuilt">Designed &amp; built by me</span></p>
     </div>
   </footer>
 
-  <script type="module" src="scene3d.js"></script>
-  <script src="app.js"></script>
+  <script type="module" src="scene3d.js?v=20261208"></script>
+  <script src="app.js?v=20261211"></script>
 </body>
 </html>
