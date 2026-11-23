@@ -70,7 +70,7 @@
     }
   };
 
-  const marqueeTrack = document.querySelector('.marquee-track');
+  const marqueeTrack = document.getElementById('marqueeTrack');
   const marqueeGroup = marqueeTrack?.querySelector('.marquee-group');
   const syncMarquee = () => {
     if (!marqueeTrack || !marqueeGroup) return;
